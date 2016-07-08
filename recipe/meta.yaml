@@ -1,7 +1,7 @@
 {% set version = "2.1.0" %}
 
 package:
-  name: python-pathlib2
+  name: pathlib2
   version: {{ version }}
 
 source:
