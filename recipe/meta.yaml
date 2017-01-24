@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: pathlib2
@@ -7,7 +7,7 @@ package:
 source:
   fn: pathlib2-{{ version }}.tar.gz
   url: https://github.com/mcmtroffaes/pathlib2/archive/{{ version }}.tar.gz
-  md5: 5ef144f5050f17962e9cef35c0e93ed7
+  sha256: 3ea36fb93e514e85360083f02a2d025ebe17b685c704ae035d1626d1d2b381fc
 
 build:
   number: 0
@@ -20,6 +20,7 @@ requirements:
   run:
     - python
     - six
+    - scandir  # [py27]
 
 test:
   imports:
@@ -28,6 +29,7 @@ test:
 about:
   home: https://github.com/mcmtroffaes/pathlib2
   license: MIT
+  license_file: LICENSE.rst
   summary: "Fork of pathlib aiming to support the full stdlib Python API."
 
 extra:
