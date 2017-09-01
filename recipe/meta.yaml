@@ -36,6 +36,7 @@ about:
     tracks the standard library module, so all the newest features of the standard
     pathlib can be used also on older Python versions.
   doc_url: https://pypi.python.org/pypi/pathlib2/
+  dev_url: https://github.com/mcmtroffaes/pathlib2
   doc_source_url: https://github.com/mcmtroffaes/pathlib2/blob/develop/README.rst
 
 extra:
