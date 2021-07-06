@@ -16,6 +16,8 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
     - six
@@ -24,6 +26,10 @@ requirements:
 test:
   imports:
     - pathlib2
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/mcmtroffaes/pathlib2
